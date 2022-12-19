@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_building"
+        android:icon="@drawable/building"
+        android:title="Building" />
+    <item
+        android:id="@+id/navigation_portion"
+        android:icon="@drawable/portion"
+        android:title="Portion" />
+    <item
+        android:id="@+id/navigation_tenant"
+        android:icon="@drawable/tenant"
+        android:title="Tenant" />
+
+    <item
+        android:id="@+id/navigation_rent"
+        android:icon="@drawable/rent"
+        android:title="Rent" />
+    <item
+        android:id="@+id/navigation_user"
+        android:icon="@drawable/user_img"
+        android:title="User" />
+
+</menu>

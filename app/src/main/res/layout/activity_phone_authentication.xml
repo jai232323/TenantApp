@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Activity.PhoneAuthenticationActivity">
+
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:src="@drawable/m_a"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        app:startIconDrawable="@drawable/phone"
+        app:startIconTint="@color/red"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your phone"
+            android:inputType="number"
+            android:fontFamily="@font/roboto_black"
+            android:id="@+id/idEdtPhoneNumber"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/idBtnGetOtp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        app:cornerRadius="1dp"
+        style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEdtPhoneNumber"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="#123"
+        android:textSize="18dp"
+        android:fontFamily="@font/roboto_black"
+        android:layout_marginBottom="10dp"
+        android:text="Get OTP"
+        android:textAllCaps="false" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        app:startIconDrawable="@drawable/phone"
+        app:startIconTint="@color/red"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter OTP"
+            android:inputType="number"
+            android:fontFamily="@font/roboto_black"
+            android:id="@+id/idEdtOtp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/idBtnVerify"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        app:cornerRadius="1dp"
+        style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEdtPhoneNumber"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="#123"
+        android:textSize="18dp"
+        android:fontFamily="@font/roboto_black"
+        android:layout_marginBottom="10dp"
+        android:text="Verify OTP"
+        android:textAllCaps="false" />
+</LinearLayout>

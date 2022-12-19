@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    app:layout_goneMarginLeft="5dp"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="5dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="10sp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1.5"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/roboto_black"
+                    android:id="@+id/P_Name"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Floor"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/roboto_black"
+                    android:id="@+id/P_Floor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="EBCard"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/roboto_black"
+                    android:id="@+id/P_EBCard"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="B_Name"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/roboto_black"
+                    android:id="@+id/B_Name"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/circle"
+                    android:id="@+id/P_Edit"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/edit"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit"
+                        android:textSize="15dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/roboto_black"
+                        android:textAllCaps="true"
+                        android:layout_marginRight="5dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/circle"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/P_Delete"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/delete" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DELETE"
+                        android:textSize="15dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/roboto_black"
+                        android:textAllCaps="true"
+                        android:layout_marginRight="5dp"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Assign Tenants"
+                    android:textSize="18dp"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:textColor="#FFF"
+                    android:id="@+id/AssignTenants"
+                    android:fontFamily="@font/roboto_black"
+                    android:textAllCaps="true"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/circle"
+                    android:layout_marginRight="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16sp"
+                android:id="@+id/ll_edit"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="22dp"
+                    android:fontFamily="@font/roboto_black"
+                    android:textColor="@color/red"
+                    android:textAllCaps="true"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    app:startIconDrawable="@drawable/p_home_name"
+                    app:startIconTint="@color/red"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Portion Name"
+                        android:inputType="text"
+                        android:fontFamily="@font/roboto_black"
+                        android:id="@+id/P_NameET"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    app:startIconDrawable="@drawable/p_floor"
+                    app:startIconTint="@color/red"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Portion Floor"
+                        android:inputType="text"
+                        android:fontFamily="@font/roboto_black"
+                        android:id="@+id/P_FloorET"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    app:startIconDrawable="@drawable/p_eb"
+                    app:startIconTint="@color/red"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Portion_EB Card"
+                        android:inputType="text"
+                        android:fontFamily="@font/roboto_black"
+                        android:id="@+id/P_EBCardET"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/P_Save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:text="Save"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/red"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+            <Spinner
+                android:id="@+id/AssignToTenants"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dialog" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Housing</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Buildings">Buildings</string>
+    <string name="Portions">Portions</string>
+    <string name="Tenants">Tenants</string>
+    <string name="Rental">Rental</string>
+
+    <string name="AddRental">Add Rental</string>
+
+</resources>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    app:layout_goneMarginLeft="5dp"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="5dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1.7"
+                android:padding="10sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@color/red"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto_black"
+                    android:id="@+id/Member_Name"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textColor="@color/red"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto_black"
+                    android:id="@+id/Member_Address"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MobileNumber"
+                    android:textColor="@color/red"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto_black"
+                    android:id="@+id/Member_MobileNumber"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.3"
+                android:layout_gravity="center">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:src="@drawable/edi_red"
+                    android:layout_gravity="center"
+                    android:id="@+id/edit"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:src="@drawable/delete_red"
+                    android:layout_gravity="center"
+                    android:id="@+id/delete"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/LL_AddMembers"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                app:startIconDrawable="@drawable/m_name"
+                app:startIconTint="@color/red"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Member Name"
+                    android:inputType="text"
+                    android:fontFamily="@font/roboto_black"
+                    android:id="@+id/Member_NameEdit"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                app:startIconDrawable="@drawable/t_address"
+                app:startIconTint="@color/red"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address"
+                    android:inputType="text"
+                    android:fontFamily="@font/roboto_black"
+                    android:id="@+id/Member_AddressEdit"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                app:startIconDrawable="@drawable/t_mobileno"
+                app:startIconTint="@color/red"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="MobileNumber"
+                    android:inputType="number"
+                    android:fontFamily="@font/roboto_black"
+                    android:id="@+id/Member_MobileNumberEdit"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:backgroundTint="#D81B60"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10sp"
+                android:textColor="@color/white"
+                android:text="Edit"
+                android:textSize="20dp"
+                android:textAllCaps="true"
+                android:fontFamily="@font/roboto_black"
+                android:id="@+id/EditTenantData"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
